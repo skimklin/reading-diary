@@ -10,6 +10,7 @@
 
 2018年8月5日
 
-
+inerterviewMap中vue-router解析
+router挂载原理,router映射生成细节
 
 #
