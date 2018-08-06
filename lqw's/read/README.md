@@ -1,5 +1,10 @@
 # 阅读笔记
 
+## 2018年8月6日
+
+- 地址: [js实现敏感词过滤算法](https://juejin.im/post/5b5456ec6fb9a04fe91a7834?utm_source=gold_browser_extension)
+- 阅读并理解 DFA 算法,熟悉 js 内置 Map 对象的使用,掌握 for 循环? (误
+
 ## 2018年8月5日
 
 - 了解发布订阅模式,顺带看了一些迭代器跟生成器.简单实现了一下普通版的订阅模式跟 rx 风格的订阅模式
