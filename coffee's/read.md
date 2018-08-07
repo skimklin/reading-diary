@@ -14,3 +14,8 @@ inerterviewMap中vue-router解析
 router挂载原理,router映射生成细节
 
 #
+
+2018年8月6日
+
+了解选择排序,插入排序和归并排序
+
