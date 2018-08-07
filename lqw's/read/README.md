@@ -1,5 +1,8 @@
 # 阅读笔记
 
+## 2018年8月7日
+- 理解归并排序(分治)与快速排序(冒泡 + 分治)
+
 ## 2018年8月6日
 
 - 地址: [js实现敏感词过滤算法](https://juejin.im/post/5b5456ec6fb9a04fe91a7834?utm_source=gold_browser_extension)
