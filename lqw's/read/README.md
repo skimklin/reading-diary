@@ -1,5 +1,9 @@
 # 阅读笔记
 
+## 2018年8月9日
+
+- 学习正则表达式(三大元素: 修饰符,元字符,量词. 原型方法: <code>const {exec, test} = RegExp.protoptype; const {match, replace, split, search} = String.prototype</code>
+
 ## 2018年8月8日
 - 理解桶排序(栈)
 - 函数式编程范例及练习(使用递归,柯里化,高阶函数)
