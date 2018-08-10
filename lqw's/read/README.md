@@ -1,5 +1,9 @@
 # 阅读笔记
 
+## 2018年8月10日
+
+- 了解 jest 的基本使用
+
 ## 2018年8月9日
 
 - 学习正则表达式(三大元素: 修饰符,元字符,量词. 原型方法: <code>const {exec, test} = RegExp.protoptype; const {match, replace, split, search} = String.prototype</code>
