@@ -1,5 +1,16 @@
 # 阅读笔记
 
+## 2018年8月9日
+
+- 学习正则表达式(三大元素: 修饰符,元字符,量词. 原型方法: <code>const {exec, test} = RegExp.protoptype; const {match, replace, split, search} = String.prototype</code>
+
+## 2018年8月8日
+- 理解桶排序(栈)
+- 函数式编程范例及练习(使用递归,柯里化,高阶函数)
+
+## 2018年8月7日
+- 理解归并排序(分治)与快速排序(冒泡 + 分治)
+
 ## 2018年8月6日
 
 - 地址: [js实现敏感词过滤算法](https://juejin.im/post/5b5456ec6fb9a04fe91a7834?utm_source=gold_browser_extension)

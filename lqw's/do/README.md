@@ -1,9 +1,21 @@
 # 动手记录
 
+## 2018年8月9日
+
+- 实现简单的模板编译
+
+## 2018年8月7日
+
+- 将敏感词过滤改为 es6 class 
+- [SensitiveFilter.ts](https://github.com/lllllllqw/lllllllqw.github.io/blob/master/js/speedJavascript/utils/SensitiveFilter.ts)
+- 开始使用 TypeScript
+- 归并排序的递归实现跟迭代实现
+- 快速排序的递归实现
+- [sort.ts](https://github.com/lllllllqw/lllllllqw.github.io/blob/master/js/speedJavascript/utils/sort.ts)
+
 ## 2018年8月6日
 
 - 使用 javascript 内置的 Map 对象实现 DFA 算法的敏感词过滤
-- [code](https://github.com/lllllllqw/lllllllqw.github.io/blob/master/js/speedJavascript/utils/checkSensitiveWord.js)
 
 ## 2018年8月5日
 
