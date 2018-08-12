@@ -62,13 +62,109 @@ const obj = { a: '嘻嘻' }
 push(obj, '呵呵', '哈哈', '嘿嘿')
 console.log(obj) // { '0': '呵呵', '1': '哈哈', '2': '嘿嘿', a: '嘻嘻', length: 3 }
 ```
-
 #
 
 2018年8月8日
+- [x] 阅读设计模式
+- 开放-封闭原则(OCP)
+> 软件实体(类 模块 函数)等应该是可以扩展的,但是不可修改
 
+几乎所有的设计模式都遵循了开放-封闭原则
 #
 
 2018年8月9日
+
+防抖
+```javascript
+function now() {
+  return +new Date()
+}
+
+function debounce (func, wait = 50, immediate = true) {
+  let last, timer, context, args
+  const timeoutReset = () => setTimeout(() => {
+    timer = null
+    if (!immediate) {
+      func.apply(context, args)
+      context = args = null
+    }
+  }, wait)
+
+  return function(...params) {
+    // 每次调用更新最后一次点击的时间
+    last = now() + wait
+    // 如果没有创建过计时器,则调用函数并开始计时
+    // 如果还在计时中
+    if (!timer) {
+      timer = timeoutReset()
+      if (immediate) {
+        func.apply(this, params)
+      } else {
+        context = this
+        args = params
+      }
+    } else if (now() < last) {
+      clearTimeout(timer)
+      timer = timeoutReset()
+    }
+  }
+}
+
+```
+
+#
+
+2018年8月10日
+
+节流
+
+节流在防抖的基础上,改一个地方就ok了
+```javascript
+function now() {
+  return +new Date()
+}
+
+function throttle (func, wait = 50, immediate = true) {
+  let last, timer, context, args
+  const timeoutReset = () => setTimeout(() => {
+    timer = null
+    if (!immediate) {
+      func.apply(context, args)
+      context = args = null
+    }
+  }, wait)
+
+  return function(...params) {
+    // 每次调用更新最后一次点击的时间
+    // last = now() + wait 这行代码移动一下就变成节流了
+    // 如果没有创建过计时器,则调用函数并开始计时
+    // 如果还在计时中
+    if (!timer) {
+      timer = timeoutReset()
+      if (immediate) {
+        func.apply(this, params)
+      } else {
+        context = this
+        args = params
+      }
+    } else if (now() < last) {
+      // 节流的情况下,不需要每次都更改last,只在last过期之后才重置
+      last = now() + wait
+      clearTimeout(timer)
+      timer = timeoutReset()
+    }
+  }
+}
+```
+
+
+#
+
+2018年8月11日
+
+
+#
+
+2018年8月12日
 
 #
