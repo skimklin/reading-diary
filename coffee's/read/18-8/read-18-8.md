@@ -124,7 +124,7 @@ function now() {
   return +new Date()
 }
 
-function debounce (func, wait = 50, immediate = true) {
+function throttle (func, wait = 50, immediate = true) {
   let last, timer, context, args
   const timeoutReset = () => setTimeout(() => {
     timer = null
