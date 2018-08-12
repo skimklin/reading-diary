@@ -1,5 +1,12 @@
 # 动手记录
 
+## 2018年8月12日
+
+- 实现链表类及其测试
+- [LinkedList.ts](https://github.com/lllllllqw/lllllllqw.github.io/blob/master/js/speedJavascript/utils/LinkedList.ts)
+- 实现集合类及其测试
+- [LSet.ts](https://github.com/lllllllqw/lllllllqw.github.io/blob/master/js/speedJavascript/utils/LSet.ts)
+
 ## 2018年8月9日
 
 - 实现简单的模板编译

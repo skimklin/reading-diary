@@ -2,6 +2,12 @@
 
 ## 2018年8月12日
 
+- 了解队列(先进后出)
+- 链表(有序元素集合, 元素包含它下一位元素的引用)
+- 集合(不重复的元素集合, 附带 并集, 交集, 差集, 子集)
+
+## 2018年8月12日
+
 - 了解 WeakMap
 - 使用 WeakMap 实现 js 类的私有变量
 
@@ -11,7 +17,15 @@
 
 ## 2018年8月9日
 
-- 学习正则表达式(三大元素: 修饰符,元字符,量词. 原型方法: <code>const {exec, test} = RegExp.protoptype; const {match, replace, split, search} = String.prototype</code>
+- 学习正则表达式(三大元素: 修饰符,元字符,量词) 
+
+  原型方法: 
+  
+  <code>
+  const {exec, test} = RegExp.protoptype;  
+  
+  const {match, replace, split, search} =   String.prototype
+  </code>
 
 ## 2018年8月8日
 - 理解桶排序(栈)
