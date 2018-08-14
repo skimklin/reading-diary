@@ -103,7 +103,7 @@ function debounce (func, wait = 50, immediate = true) {
         context = this
         args = params
       }
-    } else if (now() < last) {
+    } else {
       clearTimeout(timer)
       timer = timeoutReset()
     }
@@ -183,5 +183,6 @@ function throttle (func, wait = 50, immediate = true) {
 
 2018年8月14日
 
+修复节流的bug (╯‵□′)╯︵┻━┻
 
 #
