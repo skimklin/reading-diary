@@ -162,9 +162,26 @@ function throttle (func, wait = 50, immediate = true) {
 
 2018年8月11日
 
+阅读
+> clean code
 
 #
 
 2018年8月12日
+
+阅读
+> 深入理解ES6
+
+#
+
+2018年8月13日
+
+阅读
+> 学习javascript数据结构与算法
+
+#
+
+2018年8月14日
+
 
 #
