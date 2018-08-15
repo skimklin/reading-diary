@@ -81,8 +81,8 @@ function now() {
 }
 
 function debounce (func, wait = 50, immediate = true) {
-  let last, timer, context, args
-  const timeoutReset = () => setTimeout(() => {
+  let timer, context, args
+  const later = () => setTimeout(() => {
     timer = null
     if (!immediate) {
       func.apply(context, args)
@@ -91,21 +91,19 @@ function debounce (func, wait = 50, immediate = true) {
   }, wait)
 
   return function(...params) {
-    // 每次调用更新最后一次点击的时间
-    last = now() + wait
     // 如果没有创建过计时器,则调用函数并开始计时
     // 如果还在计时中
     if (!timer) {
-      timer = timeoutReset()
+      timer = later()
       if (immediate) {
         func.apply(this, params)
       } else {
         context = this
         args = params
       }
-    } else if (now() < last) {
+    } else {
       clearTimeout(timer)
-      timer = timeoutReset()
+      timer = later()
     }
   }
 }
@@ -126,7 +124,7 @@ function now() {
 
 function throttle (func, wait = 50, immediate = true) {
   let last, timer, context, args
-  const timeoutReset = () => setTimeout(() => {
+  const later = () => setTimeout(() => {
     timer = null
     if (!immediate) {
       func.apply(context, args)
@@ -136,22 +134,21 @@ function throttle (func, wait = 50, immediate = true) {
 
   return function(...params) {
     // 每次调用更新最后一次点击的时间
-    // last = now() + wait 这行代码移动一下就变成节流了
     // 如果没有创建过计时器,则调用函数并开始计时
     // 如果还在计时中
     if (!timer) {
-      timer = timeoutReset()
+      timer = later()
       if (immediate) {
         func.apply(this, params)
       } else {
         context = this
         args = params
       }
-    } else if (now() < last) {
-      // 节流的情况下,不需要每次都更改last,只在last过期之后才重置
+    } else if (now() <= last) {
+      // 节流的情况下,不需要每次都更改last,只在last过期之后更新
       last = now() + wait
       clearTimeout(timer)
-      timer = timeoutReset()
+      timer = later()
     }
   }
 }
@@ -183,5 +180,12 @@ function throttle (func, wait = 50, immediate = true) {
 
 2018年8月14日
 
+修复了一晚上防抖函数的bug,发现并没有bug,出bug的居然是我的脑子 (╯‵□′)╯︵┻━┻
+
+#
+
+2018年8月15日
+
+整理防抖函数实现的知识点,写成md准备分享
 
 #
