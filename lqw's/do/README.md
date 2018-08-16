@@ -1,11 +1,16 @@
 # 动手记录
 
+## 2018年8月16日
+
+- 实现硬币最小找零问题
+- [MinCoinChange.ts](https://github.com/lllllllqw/lllllllqw.github.io/blob/master/js/utils/MinCoinChange.ts)
+
 ## 2018年8月12日
 
 - 实现链表类及其测试
-- [LinkedList.ts](https://github.com/lllllllqw/lllllllqw.github.io/blob/master/js/speedJavascript/utils/LinkedList.ts)
+- [LinkedList.ts](https://github.com/lllllllqw/lllllllqw.github.io/blob/master/js/utils/LinkedList.ts)
 - 实现集合类及其测试
-- [LSet.ts](https://github.com/lllllllqw/lllllllqw.github.io/blob/master/js/speedJavascript/utils/LSet.ts)
+- [LSet.ts](https://github.com/lllllllqw/lllllllqw.github.io/blob/master/js/utils/LSet.ts)
 
 ## 2018年8月9日
 
@@ -14,11 +19,11 @@
 ## 2018年8月7日
 
 - 将敏感词过滤改为 es6 class 
-- [SensitiveFilter.ts](https://github.com/lllllllqw/lllllllqw.github.io/blob/master/js/speedJavascript/utils/SensitiveFilter.ts)
+- [SensitiveFilter.ts](https://github.com/lllllllqw/lllllllqw.github.io/blob/master/js/utils/SensitiveFilter.ts)
 - 开始使用 TypeScript
 - 归并排序的递归实现跟迭代实现
 - 快速排序的递归实现
-- [sort.ts](https://github.com/lllllllqw/lllllllqw.github.io/blob/master/js/speedJavascript/utils/sort.ts)
+- [sort.ts](https://github.com/lllllllqw/lllllllqw.github.io/blob/master/js/utils/sort.ts)
 
 ## 2018年8月6日
 
