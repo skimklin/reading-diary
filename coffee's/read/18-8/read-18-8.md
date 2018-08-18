@@ -189,3 +189,11 @@ function throttle (func, wait = 50, immediate = true) {
 整理防抖函数实现的知识点,写成md准备分享
 
 #
+
+2018年8月16日
+
+阅读
+
+> 深入理解ES6
+
+#
