@@ -197,3 +197,27 @@ function throttle (func, wait = 50, immediate = true) {
 > 深入理解ES6
 
 #
+
+2018年8月17日
+
+阅读vue-router相关知识
+
+#
+
+2018年8月18日
+
+阅读vue 挂载过程
+
+#
+
+2018年8月19日
+
+复习http相关知识
+
+#
+
+2018年8月20日
+
+// TODO
+
+#
